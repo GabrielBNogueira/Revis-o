@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Doação</title>
+    <link rel="stylesheet" href="css/style.css"
+</head>
+
+<body>
+      <div class="container">
+    <h1>Gerenciador de Doações de Roupas</h1>
+    <form id="form-doacao">
+      <label for="nome">Nome do Doador:</label>
+      <input type="text" id="nome" required />
+
+      <label for="tipo">Tipo de Roupa:</label>
+      <select id="tipo" required>
+        <option value="Camiseta">Camiseta</option>
+        <option value="Calça">Calça</option>
+        <option value="Agasalho">Agasalho</option>
+        <option value="Calçado">Calçado</option>
+      </select>
+
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" id="quantidade" min="1" required />
+
+      <label>
+        <input type="checkbox" id="infantil" />
+        É peça infantil?
+      </label>
+
+      <button type="submit" id="registrar-btn">Registrar Doação</button>
+    </form>
+
+    <h2>Lista de Doações</h2>
+    <table id="tabela-doacoes">
+      <thead>
+        <tr>
+          <th>Doador</th>
+          <th>Tipo</th>
+          <th>Qtd</th>
+          <th>Infantil</th>
+          <th>Impacto</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
