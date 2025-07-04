@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Título</h1>
+    
+    <form id="form">
+      <label for="nome">PH</label>
+      <input type="text" id="PH" name="PH" required /> 
+
+      <label for="data">PH</label>
+      <input type="date" id="PH" name="PH" required />
+
+      <label for="tipo">PH</label>
+      <select id="PH" name="PH" required >
+        <option value="PH1">PH1</option>
+        <option value="PH2">PH2</option>
+        <option value="PH3...">PH3</option>
+      </select>
+
+      <input type="hidden" id="indexEditar">
+      
+      <button id="btnConfirmar">Confirmar</button>
+    </form>
+
+     <div class="tabela">
+        <table>
+            <thead> <!--cabeçalho da tabela-->
+                <tr> <!--linhas da tabela-->
+                    <th>PH1</th>
+                    <th>PH2</th>
+                    <th>PH3...</th>
+                </tr>
+            </thead>
+            <tbody id="PH"> <!--corpo da tabela--> </tbody>
+        </table>
+    </div>
+
+
+    </div>
+
+<script src="script.js"></script>    
+</body>
+
+</html>
